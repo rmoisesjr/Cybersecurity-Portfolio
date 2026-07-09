@@ -1,14 +1,15 @@
 
 ### 2026-02-28 -- Traffic analysis exercise: Easy as 123 - Lab From MALWARE-TRAFFIC-ANALYSIS.NET
 ## Pre-Investigation Context:
-The Threat: NetSupport Manager RAT
+# The Threat: 
+NetSupport Manager RAT
 The alert says "NetSupport Manager RAT."
 NetSupport Manager is actually a legitimate, commercial remote support software (like TeamViewer or AnyDesk). Admin teams use it to help users.
 However, threat actors love to steal it, modify it, and use it as a Remote Access Trojan (RAT).
+Once it infects a machine, it phones home to a command-and-control (C2) server.
 
-The Concept: Once it infects a machine, it phones home to a command-and-control (C2) server.
-
-The Danger: It gives the attacker full GUI control over the victim's computer. They can see the screen, move the mouse, steal passwords, and drop more malware.
+# The Danger: 
+It gives the attacker full GUI control over the victim's computer. They can see the screen, move the mouse, steal passwords, and drop more malware.
 
 ## Vulnerability Type: 
 NetSupport Manager RAT
