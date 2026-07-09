@@ -10,9 +10,10 @@ The Concept: Once it infects a machine, it phones home to a command-and-control 
 
 The Danger: It gives the attacker full GUI control over the victim's computer. They can see the screen, move the mouse, steal passwords, and drop more malware.
 
-Vulnerability Type: NetSupport Manager RAT
+## Vulnerability Type: 
+NetSupport Manager RAT
 
-Target component (IP, ports, MAC address, information of the target):
+## Target component (IP, ports, MAC address, information of the target):
 
 #### Note: Defanging is the practice of intentionally breaking the format of a malicious link or IP address (like changing google.com to google[.]com) so that it becomes unclickable text. 
 
@@ -35,8 +36,6 @@ Protocol/Port: TCP port 443. Port 443 is normally used for secure web traffic (H
 An unknown Windows computer inside your building (10.2.28.X) got infected. At 19:55 UTC, it reached out through your router (10.2.28.1) to talk to an attacker's server (45.131.214.85) over port 443.
 Your job with the pcap is to look at that exact conversation and rip out the identities of the machine and the user who messed up.
 
-Operational Impact: (what happens if attack or investigation is done successfully) = we will be able to write an incident report based on our findings so someone can track the infected computer and stop the threat
-Technical Concepts(what we have learned): Flag or prize:
 
 ## TASKS
  For this exercise, answer the following questions for your incident report:
