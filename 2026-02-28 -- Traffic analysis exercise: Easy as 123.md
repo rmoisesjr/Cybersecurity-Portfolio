@@ -1,5 +1,5 @@
 
-### 2026-02-28 -- Traffic analysis exercise: Easy as 123
+### 2026-02-28 -- Traffic analysis exercise: Easy as 123 - Lab From MALWARE-TRAFFIC-ANALYSIS.NET
 ## Pre-Investigation Context:
 The Threat: NetSupport Manager RAT
 The alert says "NetSupport Manager RAT."
