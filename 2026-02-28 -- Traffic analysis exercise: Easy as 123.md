@@ -78,3 +78,6 @@ We specifically look at Packet No. 103 (timestamp 4.294204), which is the DHCP R
 <img width="1892" height="1999" alt="Image" src="https://github.com/user-attachments/assets/ba6adf59-4b53-4459-86e8-76786659b44a" />
 9. Moving to the next question: What is the user account name from the infected Windows client? To identify who successfully logged into the compromised machine within a Windows Active Directory environment, we must analyze Kerberos authentication traffic. Because users must authenticate to the Domain Controller to prove their identity, inspecting Kerberos packets will reveal both the protocol exchange and the specific account names used
 
+10. To identify the compromised accounts, we must analyze Kerberos authentication traffic directed at the Domain Controller (DC) IP (10.2.28[.]2)  rather than searching for the suspected malicious IP (45.131.214[.]85). Because any attacker must authenticate with the DC to access network resources, inspecting these Kerberos packets will expose both the authentication handshake and the specific user accounts being targeted. To do this we will type the on the filter bar "kerberos.CNameString" . we get this :
+ <img width="1866" height="558" alt="image" src="https://github.com/user-attachments/assets/4aad2f87-08c8-40c9-a256-ad9645c65e3a" />
+
