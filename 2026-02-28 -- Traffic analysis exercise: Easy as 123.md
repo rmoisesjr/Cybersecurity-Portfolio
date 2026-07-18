@@ -38,7 +38,7 @@ An unknown Windows computer inside your building (10.2.28.X) got infected. At 19
 Your job with the pcap is to look at that exact conversation and rip out the identities of the machine and the user who messed up.
 
 
-## TASKS
+## TASKS + Answers
  For this exercise, answer the following questions for your incident report:
 
 ####  What is the IP address of the infected Windows client?
@@ -51,7 +51,7 @@ Your job with the pcap is to look at that exact conversation and rip out the ide
 DESKTOP-TEYQ2NR
 
 #### What is the user account name from the infected Windows client?
-
+brolf
 #### What is the full name of the user from the user account?
 
 # Execution:
@@ -82,6 +82,7 @@ We specifically look at Packet No. 103 (timestamp 4.294204), which is the DHCP R
  <img width="1866" height="558" alt="image" src="https://github.com/user-attachments/assets/4aad2f87-08c8-40c9-a256-ad9645c65e3a" />
 11. Now that we have filtered the Kerberos traffic and located the victim IP (10.2.28.88) on the screen, we can proceed with inspecting the following frames: AS-REQ (Frame 24) the victim computer has to  verify with the Domain Controller to log in as user, this frame will tell us the name they used in plaintext. <img width="1840" height="1968" alt="image" src="https://github.com/user-attachments/assets/67c8735e-b0a3-41aa-ba2d-d6b87a435ef0" />
 when clicking the Kerberos section and finally seeing the "cname-string" we see that the victim account name is "brolf".
+
 12.Next task is to ,
    
 
